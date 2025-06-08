@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Adicionar Novo Jogo</title>
+</head>
+<body>
+<h1>Adicionar Novo Jogo</h1>
+<form action="games" method="post">
+  <input type="hidden" name="action" value="add">
+  <p>Nome: <input type="text" name="nome" required></p>
+  <p>Descrição: <textarea name="descricao"></textarea></p>
+  <p>Preço: <input type="number" step="0.01" name="preco" required></p>
+  <p><input type="submit" value="Adicionar"></p>
+</form>
+<a href="games">Voltar para a Lista</a>
+</body>
+</html>
